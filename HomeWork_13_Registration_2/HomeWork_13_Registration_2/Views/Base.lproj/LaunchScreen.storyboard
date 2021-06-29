@@ -18,11 +18,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My First App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-Ox-4P6">
                                 <rect key="frame" x="122" y="435.5" width="170" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.40156294830104844" green="0.36337026067535866" blue="0.38004267653793666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="nO2-Ox-4P6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Qrc-JH-2D4"/>
                             <constraint firstItem="nO2-Ox-4P6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e1s-G3-iVS"/>
