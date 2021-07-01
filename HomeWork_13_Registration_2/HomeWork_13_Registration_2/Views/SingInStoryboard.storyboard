@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7mG-aF-j7L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7mG-aF-j7L">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,10 +19,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Z3-eZ-WhX">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="770.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="749.66666666666663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="LeM-gY-iaS">
-                                                <rect key="frame" x="25" y="179.99999999999997" width="364" height="410.33333333333326"/>
+                                                <rect key="frame" x="25" y="180.00000000000003" width="364" height="389.66666666666674"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sing in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4v-zy-Suz">
                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="40.666666666666664"/>
@@ -31,7 +31,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="REM-wQ-6bl">
-                                                        <rect key="frame" x="0.0" y="141.66666666666669" width="364" height="119.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="141.66666666666669" width="364" height="99"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mai" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="JKL-FQ-DbI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
@@ -42,7 +42,7 @@
                                                                 </connections>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QQH-mn-kHl">
-                                                                <rect key="frame" x="0.0" y="65" width="364" height="54.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="65" width="364" height="34"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-yi-kuz">
                                                                         <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
@@ -52,8 +52,8 @@
                                                                             <action selector="passTFChanged:" destination="LJP-Uq-jT8" eventType="editingChanged" id="ONl-ga-NW4"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password or email didn't match, try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz1-9g-WfH">
-                                                                        <rect key="frame" x="0.0" y="38.999999999999943" width="364" height="15.666666666666664"/>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password or email didn't match, try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz1-9g-WfH">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="0.0"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </label>
@@ -62,13 +62,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGt-3r-dSG">
-                                                        <rect key="frame" x="0.0" y="362.33333333333337" width="364" height="48"/>
+                                                        <rect key="frame" x="0.0" y="341.66666666666663" width="364" height="48"/>
                                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="Sing In">
                                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signinTapped" destination="LJP-Uq-jT8" eventType="touchUpInside" id="NDB-Uy-T9c"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -115,6 +118,7 @@
                     <connections>
                         <outlet property="emailTF" destination="JKL-FQ-DbI" id="0iH-f2-9pI"/>
                         <outlet property="passTF" destination="xRb-yi-kuz" id="ruz-PJ-PqD"/>
+                        <outlet property="userErrorLbl" destination="Qz1-9g-WfH" id="sOt-cN-q9y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIo-5P-C7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

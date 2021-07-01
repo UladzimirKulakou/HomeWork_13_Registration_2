@@ -12,7 +12,7 @@ class SingInVC: UIViewController {
 
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passTF: UITextField!
-    
+    @IBOutlet weak var userErrorLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,23 @@ class SingInVC: UIViewController {
     }
     
     @IBAction func passTFChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func signinTapped() {
+        guard let email = emailTF.text,
+            let pass = passTF.text else {return}
+        if checkUser(email: email, pass: pass) {
+            print("go to next VC after registrat")
+        }
+    }
+    
+    private func checkUser(email: String, pass: String) -> Bool {
+       
+        let emailSaved = UserDefaults.standard.object(forKey: Constants.email) as! String
+        let passSaved = UserDefaults.standard.object(forKey: Constants.pass) as! String
+        let userFound = (email == emailSaved) && (pass == passSaved)
+        userErrorLbl.isHidden = userFound
+       return  userFound
     }
     
 }

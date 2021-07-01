@@ -16,7 +16,7 @@ enum PasswordStrangth: Int {
     case strong
 }
 
-class VerificationService {
+final class VerificationService {
 
     static let weakRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
     static let notVeryWeakRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[$@$!%*#?&])[A-Za-z\\d$@$!%*#?&]{8,}$"
@@ -40,5 +40,8 @@ class VerificationService {
         } else {
             return .veryWeak
         }
+    }
+    static func isPassConfirm(pass1: String, pass2: String) -> Bool {
+        return pass1 == pass2 
     }
 }
